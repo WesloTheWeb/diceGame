@@ -42,5 +42,5 @@ This is part of a series of "redoing" old projects from boot camp as well as pro
 DOM Manipulation, Experiments). I want to start using Github more actively. As well as add "upgrades" to older projects with my new
 found knowledge.
 
-# DOWNLOAD Notes
+# DOWNLOAD NOTES
 - You are more than welcome to download and try it out. Please note that downloading from Github may make everything in one zip file. Please check the pathing specifically of the images.src + .css + .js  file. It would just be a simple pathing clear because I divided it into folders. So do not be alarm if downloaded and it is slightly out of order !
