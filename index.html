@@ -1,0 +1,52 @@
+<!-- 
+GAME RULES:
+- 2 Player game, take turns rolling the dice.
+- In each turn, a player rolls a dice as many times each result get added to the Current score
+- If the player rolls a 1, all of the Current score gets lost. After that, it's the next player's turn
+- The player can choose to 'Hold', which means that his Current score gets added to his Cumulative score.
+After that, it's the next player's turn
+- The first player to reach 100 points on Cumulative score wins the game
+-->
+
+<!DOCTYPE html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <title>Mario Party Pig (Dice) Game</title>
+    </head>
+    <body>
+        <div class="game-container clearfix"> <!-- Wraps all content-->
+            <!-- Player One's Console -->
+            <section class="player-0-panel active">
+                <div class="player" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">0</div>
+                </div>
+            </section>
+
+            <!-- Player Two's Console-->
+            <section class="player-1-panel">
+                <div class="player" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </section>
+
+            <!-- Buttons / Controls -->
+            <section id="console-section">
+                <button class="new-game"><i class="fas fa-gamepad"></i></i>New game</button>
+                <button class="new-roll"><i class="fas fa-dice"></i> Roll dice</button>
+                <button class="save-score"><i class="far fa-hand-paper"></i> Hold Hand</button>
+            </section>
+
+            <!-- Default Dice -->
+            <img src="dice-1.png" alt="Dice" class="dice">
+        </div>
+        <!-- Scripts-->
+        <script src="app.js"></script>
+    </body>
+</html>
