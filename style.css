@@ -1,0 +1,179 @@
+/* Page Layout*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('img/mario-party.jpg');
+    font-family: arial;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+.game-container {
+    position: relative;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border: solid #8AE84C 5px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ 
+/* Split the two sides */
+.player-0-panel,
+.player-1-panel {
+    width: 50%;
+    float: left;
+    padding: 10%;
+}
+
+/**********************************************
+Player Settings
+**********************************************/
+
+.player {
+    position: relative;
+    font-size: 24pt;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+ }
+
+.player-score {
+    text-align: center;
+    font-size: 64pt;
+    font-weight: 100;
+    color: #2C880E;
+    margin-bottom: 130px;
+}
+
+.player-current-box {
+    background-color: #999be7;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+
+.player-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 16pt;
+    color: #222;
+}
+
+.player-current-score {
+    font-size: 24pt;
+}
+
+/* WHEN ACTIVE TURN */
+
+.active {
+     background: #FFEED7;
+}
+
+.active .player-name {
+     font-weight: 300;
+}
+
+.active .player::after {
+    position: absolute;
+    top: -7px;
+    right: 10px;
+    content:"\00d8"; 
+    color: #3335FF;
+    font-size: 32pt;
+ }
+
+#console-section {
+    border: 5px red;
+    margin-top: 430px;
+    background: #a9a9a9;
+}
+
+#victory {
+    color: red;
+}
+/* Button CTAs*/
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 16pt;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+ 
+button i {
+    color: #000;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 24pt;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+button:hover { 
+    font-weight: 600; 
+    border-bottom: red 2px solid;
+}
+
+
+.new-game { 
+    top: 45px;
+    font-family: cursive;
+}
+
+.new-roll { 
+    top: 403px;
+    font-family: cursive;
+
+}
+
+.save-score {
+     top: 467px;
+     font-family: cursive;
+
+}
+
+/* Objects */
+
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+.winner { background-color: #f7f7f7; }
+.winner .player-name { font-weight: 300; color: #EB4D4D; }
