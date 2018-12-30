@@ -5,6 +5,7 @@
 - The Mario Party theme is from the Mario Party dice roll game. I could not find any exports of their dice. perhaps in future I would add more to the aesthetics, but this project was focued on the JavaScript primarily.
 # This project is also my entry to Twilio's Hatch Apprenticeship 2019. Part of the application is to demo a code. I did via video but felt time constraints and will be adding extra tidbits here.
 
+# YouTube Link of short walkthrough: https://www.youtube.com/watch?v=IAs28qiybbc
 # WHAT I ENJOYED:
 - I really enjoyed making the dice RNG with the Math methods and crafty my code using the neat trick with the .textContent. Specifically of pulling of images of the var "dice" to match the actual images. I am referring to the code excerpt below.
 
