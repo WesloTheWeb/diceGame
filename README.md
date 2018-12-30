@@ -28,7 +28,7 @@ document.querySelector('.new-roll').addEventListener('click', function() {
     else {
         switchPlayer();
     }
-});
+ 
 
 # What I found challenging:
 - It took me awhile to really nail switching the players when the user holds. I tried my best to not use jQuery and figure out vanilla JavaScript. I don't mind vanilla, it's just that at work I am working heavily with jQuery. But this did reinforce old lessons and I learnt and reviewed a lot.
